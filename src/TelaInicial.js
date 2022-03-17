@@ -10,5 +10,3 @@ function TelaInicial(){
 }
 
 export default TelaInicial;
-
-{/* <button onClick={() => setVisibilidade(false)}>iniciar Recall</button> */}
