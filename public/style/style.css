@@ -9,12 +9,13 @@ body{
 }
 
 .telaInicial img{
-    margin-top: 24%;
+    margin-top: 24vh;
     height: 65px;
     width: 55px;
 }
 
 .telaInicial h1{
+    padding: 5px;
     font-family: 'Righteous', cursive;
     font-size: 25px;
     font-weight: 400;
@@ -22,6 +23,7 @@ body{
 }
 
 .telaInicial button{
+    margin-top: 19vh;
     width: 141px;
     height: 31px;
     background: #FFFFFF;
