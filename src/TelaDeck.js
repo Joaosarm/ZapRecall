@@ -1,13 +1,9 @@
 import Cards from "./Cards";
 
-function TelaDeck(){
-    return(
-        <section className = 'telaDeck'>
-            <Header />
-            <Cards />
-            <Footer />
-        </section>
-    )
+function TelaDeck({button}){
+    console.log(button);
+
+    return button ? (<></>) : (<section className = 'telaDeck'><Header /><Cards /><Footer /></section>);
 }
 
 function Header(){
