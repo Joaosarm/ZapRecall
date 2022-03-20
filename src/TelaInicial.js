@@ -1,16 +1,24 @@
 import React from "react";
 
-function TelaInicial({setButton}){
+function TelaInicial({setStart}){
     const [visibility, setVisibility] = React.useState(true);
 
     function changeScreen(){
         setVisibility(false);
-        setButton(false);
+        setStart(true);
     }
 
     return(
         <>
-        {visibility ? <section className = 'telaInicial'><img src='./img/logo.png'/><h1>ZapRecall</h1><button onClick = {changeScreen}>Iniciar Recall</button></section> : <></>} 
+        {visibility ?( 
+        <section className = 'telaInicial'>
+            <img src='./img/logo.png' alt="ZapRecall Logo"/>
+            <h1>ZapRecall</h1>
+            <button onClick = {changeScreen}>Iniciar Recall</button>
+        </section> 
+        ):(
+        <></>
+        )} 
         </>
     )
 }

@@ -4,12 +4,12 @@ import TelaInicial from "./TelaInicial";
 import TelaDeck from "./TelaDeck";
 
 function App(){
-    const [button,setButton] = React.useState(true);
+    const [start,setStart] = React.useState(false);
     
     return (
         <>
-        <TelaInicial setButton = {setButton}/>
-        <TelaDeck button = {button}/>
+        <TelaInicial setStart = {setStart}/>
+        <TelaDeck start = {start}/>
         </>
     )
 }
