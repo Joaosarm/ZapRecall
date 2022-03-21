@@ -72,7 +72,7 @@ li{
     position: relative;
 }
 
-li img{
+li .play{
     padding: 6px;
     margin-left: 80px;
 }
@@ -235,13 +235,18 @@ footer p{
     ul{
         margin-bottom: 85px;
     }
+
     li{
         min-height: 43px;
         min-width: 328px;
         font-size: 17px;
     }
 
-    li img{
+    li .icon{
+        font-size: 20px;
+    }
+
+    li .play{
         margin-left: 202px;
     }
 

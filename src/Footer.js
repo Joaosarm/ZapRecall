@@ -28,6 +28,7 @@ function Footer(props){
                     <p className="title-message"><img src="./img/party.png" alt="happy face"/> <strong> PARABÉNS!</strong></p>
                     <p className="message">Você não esqueceu de nenhum flashcard!</p>
                     <p>{icons.map(icon => renderIcon(icon))}</p>
+                    <button> Reiniciar ZapRecall</button>
                 </footer>
                 )
         }

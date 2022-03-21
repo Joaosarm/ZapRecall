@@ -42,7 +42,7 @@ function WhichStep(card,index,setAnswered,answered,icons,rigthAnswers,setRigthAn
 
     if(step === 'firstStep'){
         return(
-            <li onClick={() => setStep('secondStep')} key={index}>Pergunta {index+1} <img src = './img/vector.png' alt='Play Question'/></li>
+            <li onClick={() => setStep('secondStep')} key={index}>Pergunta {index+1} <ion-icon class='icon' name="play-outline"></ion-icon></li>
         )
     } else if(step === 'secondStep'){
         return(

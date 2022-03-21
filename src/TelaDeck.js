@@ -12,7 +12,7 @@ function TelaDeck({start}){
         <section className = 'telaDeck'>
             <Header />
             <Cards answered = {answered} setAnswered={setAnswered} setNumTotal={setNumTotal} icons ={icons} rigthAnswers={rigthAnswers} setRigthAnswers={setRigthAnswers}/>
-            <Footer numTotal = {numTotal} answered = {answered} icons={icons} rigthAnswers={rigthAnswers}/>
+            <Footer numTotal = {numTotal} answered = {answered} icons={icons} rigthAnswers={rigthAnswers} start={start}/>
         </section>
     ):(<></>);
 }
