@@ -37,7 +37,6 @@ function WhichStep(card,index,setAnswered,answered,icons,rigthAnswers,setRigthAn
             icons.push('checkmark-circle');
             setRigthAnswers(rigthAnswers+1);
         }
-        console.log(icons)
     }
 
     if(step === 'firstStep'){
