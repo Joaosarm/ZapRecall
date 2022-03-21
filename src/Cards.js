@@ -10,6 +10,8 @@ const cards = [
     { Question: 'Usamos estado (state) para __', Answer: 'Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente'}
 ]
 
+cards.sort(shuffle);
+
 function Cards(props){
     const {setAnswered, setNumTotal, answered, icons, rigthAnswers,setRigthAnswers} = props;
     setNumTotal(cards.length);
@@ -72,6 +74,10 @@ function WhichStep(card,index,setAnswered,answered,icons,rigthAnswers,setRigthAn
             )
         }
     }
+}
+
+function shuffle() { 
+	return Math.random() - 0.5; 
 }
 
 export default Cards;
